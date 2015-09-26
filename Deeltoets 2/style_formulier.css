@@ -1,0 +1,168 @@
+body > header {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1.414em;
+    background-color: blueviolet;
+}
+
+body > header > img {
+    width: 20%;
+    height: 20%;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+p {
+    font-size: 1em;
+    line-height: 140%;
+}
+
+section > article {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.related > article > footer {
+    order: 2;
+    background-color: coral;
+}
+
+
+
+@media all and (max-width: 1020px) and (min-width: 670px){
+    body > header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 1.414em;
+        background-color: hotpink;
+    }
+
+
+    section > img {
+        width: 90%;
+    }
+
+}
+
+
+
+@media all and (max-width: 699px) {
+    body > header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 1.414em;
+        background-color: aqua;
+    }
+
+    body > header > img {
+        width: 50%;
+        height: 50%;
+    }
+
+    section > img {
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    width: 3000px;
+}
+
+
+body > header {
+    float: left;
+    width: 20em;
+    padding: 1.414em;
+    background-color: antiquewhite;
+}
+
+body > header > img {
+    width: 10em;
+}
+
+
+main {
+    float: left;
+    width: 40em;
+    padding: 1.414em;
+    background-color: aquamarine;
+    -webkit-columns: 2 10em;
+    -moz-columns: 2 10em;
+    columns: 2 10em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+    -webkit-column-rule: 0.1em dotted #444;
+    -moz-column-rule: 0.1em dotted #444;
+    column-rule: 0.1em dotted #444;
+}
+
+
+
+main + section {
+    float: left;
+    width: 40em;
+    padding: 1.414em;
+    background-color: aliceblue;
+}
+
+section > img {
+    width: 15em;
+}
+
+
+aside {
+    float: left;
+    width: 20em;
+    padding: 1.414em;
+    background-color: yellow;
+}
+
+
+aside + footer {
+    float: left;
+    width: 20em;
+    padding: 1.414em;
+    background-color: red;
+}
+
+*/

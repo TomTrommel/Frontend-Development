@@ -1,0 +1,275 @@
+body {
+    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/contemporary_china.png);
+}
+
+
+
+body > header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 10px 10px 30px -5px grey;
+}
+
+body > header > h1 {
+    text-shadow: 0 0 .5em white;
+}
+
+a:hover {
+    color: whitesmoke;
+    transition: 2s;
+}
+
+
+body > header > img {
+    width: 20%;
+    height: 20%;
+    transform: rotate(10deg);
+    transition: 3s;
+}
+
+body > section, aside > section, main, footer > section {
+    margin: 5%;
+}
+
+
+
+main > article > header {
+    -webkit-columns: 2 10em;
+    -moz-columns: 2 10em;
+    columns: 2 10em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+    -webkit-column-rule: 0.1em dotted #444;
+    -moz-column-rule: 0.1em dotted #444;
+    column-rule: 0.1em dotted #444;
+    background-color: bisque;
+    padding: 1em;
+}
+
+
+
+h1 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+p {
+    font-size: 1em;
+    line-height: 140%;
+}
+
+.related h3 {
+    color: red;
+}
+
+time[datetime] {
+    font-style: italic;
+}
+
+aside + footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#sitemap ul {
+    font-size: 8pt;
+}
+
+#contact p {
+    font-size: 8pt;
+}
+
+#about p {
+    font-size: 8pt;
+}
+
+#credits p {
+    font-size: 8pt;
+}
+
+
+@media all and (max-width: 1020px) and (min-width: 670px){
+    body > header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 1.414em;
+        background-color: hotpink;
+        padding: 1em;
+    }
+
+
+    section > img {
+        width: 90%;
+
+    }
+
+}
+
+
+
+@media all and (max-width: 699px) {
+    body > header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 1.414em;
+        background-color: green;
+        padding: 1em;
+    }
+
+    body > header > img {
+        width: 50%;
+        height: 50%;
+    }
+
+    section > img {
+        width: 90%;
+    }
+
+    aside + footer {
+        flex-direction: column;
+    }
+
+    main > article > header {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    -webkit-column-gap: 1;
+    -moz-column-gap: 1;
+    column-gap: 1;
+    background-color: bisque;
+    padding: 1em;
+}
+
+    .related > article {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.related > article > header {
+    order: 2;
+}
+
+
+
+    #sitemap ul {
+    font-size: 10pt;
+}
+
+#contact p {
+    font-size: 10pt;
+}
+
+#about p {
+    font-size: 10pt;
+}
+
+#credits p {
+    font-size: 10pt;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    width: 3000px;
+}
+
+
+body > header {
+    float: left;
+    width: 20em;
+    padding: 1.414em;
+    background-color: antiquewhite;
+}
+
+body > header > img {
+    width: 10em;
+}
+
+
+main {
+    float: left;
+    width: 40em;
+    padding: 1.414em;
+    background-color: aquamarine;
+    -webkit-columns: 2 10em;
+    -moz-columns: 2 10em;
+    columns: 2 10em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+    -webkit-column-rule: 0.1em dotted #444;
+    -moz-column-rule: 0.1em dotted #444;
+    column-rule: 0.1em dotted #444;
+}
+
+
+
+main + section {
+    float: left;
+    width: 40em;
+    padding: 1.414em;
+    background-color: aliceblue;
+}
+
+section > img {
+    width: 15em;
+}
+
+
+aside {
+    float: left;
+    width: 20em;
+    padding: 1.414em;
+    background-color: yellow;
+}
+
+
+aside + footer {
+    float: left;
+    width: 20em;
+    padding: 1.414em;
+    background-color: red;
+}
+
+*/
