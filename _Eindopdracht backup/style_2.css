@@ -1,0 +1,520 @@
+body {
+    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/contemporary_china.png);
+}
+
+body > header {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        background-color: green;
+        padding: 1em;
+        border-radius: 2em;
+        box-shadow: 10px 10px 30px -5px grey;
+    }
+
+body > header > h1 {
+    text-shadow: 0 0 .5em white;
+}
+
+body > header > img {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        order: -1;
+    }
+
+
+/*---------------------------harmonica---------------------*/
+
+@media all and (max-width: 37.563em){
+
+/*De content van de harmonica die niet aangevinkt is is verboren, alles behalve het label.*/
+
+.harmonica input:not(:checked) ~ *:not(label) {
+    display: none!important;
+}
+
+.harmonica input:checked ~ label:after {
+    content: "\25B2";
+}
+
+
+}
+/*-----------------------------------------------------------*/
+
+
+nav {
+    display: flex;
+    order: -1;
+}
+
+
+
+
+nav > ul > li {
+    margin: 1em;
+    list-style-type: none;
+}
+
+
+nav > ul > li > a{
+    display: block;
+    text-decoration: none;
+    background-color: aqua;
+    padding: 0.4em;
+    border-radius: 2em;
+}
+
+
+h1 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+p {
+    font-size: 1em;
+    line-height: 140%;
+}
+
+a:hover {
+    color: whitesmoke;
+    transition: 2s;
+}
+
+main > article > header {
+    -webkit-columns: 1 10em;
+    -moz-columns: 1 10em;
+    columns: 1 10em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+    -webkit-column-rule: 0.1em dotted #444;
+    -moz-column-rule: 0.1em dotted #444;
+    column-rule: 0.1em dotted #444;
+    background-color: bisque;
+    margin: 1em;
+    padding: 1em;
+}
+
+header + footer {
+    background-color: bisque;
+    margin: 1em;
+    padding: 1em;
+}
+
+picture > img {
+    max-width: 25em;
+}
+
+.baard:hover {
+    transform: rotate(50deg);
+}
+
+
+.beroepen {
+    background-color: darksalmon
+}
+
+.beroepen > h3 {
+    font-size: 2em;
+    color: white;
+}
+
+main > article > section {
+    padding: 1em;
+}
+
+video {
+    width: 20em;
+}
+
+section > img {
+        width: 90%;
+}
+
+
+
+.related {
+    background-color: darkseagreen;
+}
+
+.related h3 {
+    color: red;
+}
+
+section {
+    padding: 1em;
+}
+
+time[datetime] {
+    font-style: italic;
+}
+
+
+aside + footer{
+    background-color: aqua;
+    padding: 1em;
+}
+
+#sitemap ul {
+    font-size: 10pt;
+}
+
+#contact p {
+    font-size: 10pt;
+}
+
+#about p {
+    font-size: 10pt;
+}
+
+#credits p {
+    font-size: 10pt;
+}
+
+
+
+
+
+
+
+
+/* ipad */
+
+@media all and (max-width: 63.750em) and (min-width: 37.563em){
+
+    body > header {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        background-color: hotpink;
+        padding: 1em;
+    }
+
+     body > header > img {
+        width: 50%;
+        height: 50%;
+        transform: rotate(5deg);
+        transition: 3s;
+     }
+
+
+    nav {
+        display: flex;
+        order: 1;
+    }
+
+    nav > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    main > article > header {
+    -webkit-columns: 2 10em;
+    -moz-columns: 2 10em;
+    columns: 2 10em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+    -webkit-column-rule: 0.1em dotted #444;
+    -moz-column-rule: 0.1em dotted #444;
+    column-rule: 0.1em dotted #444;
+    background-color: bisque;
+    margin: 1em;
+    padding: 1em;
+}
+
+    picture > img {
+    max-width: 50em;
+    }
+
+    picture + section {
+    background-color: bisque;
+    margin: 1em;
+    padding: 1em;
+    max-width: 50em;
+    }
+
+    section > img {
+        width: 50em;
+
+    }
+
+
+
+    video {
+    width: 30em;
+}
+
+    #checkbox {
+        display: none;
+    }
+
+    aside + footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* desktop */
+
+@media all and (max-width: 1000em) and (min-width: 63.750em){
+
+    body > header {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+        background-color: blueviolet;
+        max-width: 85em;
+    }
+
+
+
+     body > header > img {
+        width: 50%;
+        height: 50%;
+        transform: rotate(10deg);
+        transition: 3s;
+     }
+
+    nav {
+        display: flex;
+        order: 1;
+    }
+
+    nav > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav > ul > li:hover{
+    transform: skewY(20deg);
+    }
+
+
+     main > article > header {
+    -webkit-columns: 2 10em;
+    -moz-columns: 2 10em;
+    columns: 2 10em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+    -webkit-column-rule: 0.1em dotted #444;
+    -moz-column-rule: 0.1em dotted #444;
+    column-rule: 0.1em dotted #444;
+    background-color: bisque;
+    margin: 1em;
+    padding: 1em;
+    max-width: 85em;
+    }
+
+     header + footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85em;
+    }
+
+    picture > img {
+    max-width: 75em;
+    }
+
+    picture + section {
+    -webkit-columns: 2 10em;
+    -moz-columns: 2 10em;
+    columns: 2 10em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+    -webkit-column-rule: 0.1em dotted #444;
+    -moz-column-rule: 0.1em dotted #444;
+    column-rule: 0.1em dotted #444;
+    background-color: bisque;
+    margin: 1em;
+    padding: 1em;
+    width: 85em;
+    }
+
+    picture + section + section{
+        width: 85em;
+    }
+
+    section:nth-child(6){
+        max-width: 85em;
+    }
+
+    section > img {
+        width: 50em;
+    }
+
+    section > p{
+        max-width: 50em;
+    }
+
+    video {
+        width: 50em;
+    }
+
+    .related {
+        float: right;
+    }
+
+    aside {
+        width: 40em;
+    }
+
+    #checkbox {
+        display: none;
+    }
+
+    aside + footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+/* formulier */
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+/*--------------------------- dropdown -------------------------------------*/
+
+@media all and (max-width: 37.563em){
+
+
+/* dropdown menu stijl */
+
+nav {
+    transition: height 1s;
+    height: auto;
+}
+
+nav label {
+    text-align: left;
+    color: dodgerblue;
+}
+
+nav label:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+nav input:checked + label {
+    background-color: dodgerblue;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul a {
+    display: block;
+    padding: .5em 1.5em;
+}
+
+
+/* dropdown */
+
+nav ul {
+    display: block;
+    top: 1.1em;
+    width: 100%;
+}
+
+
+/*de checkbox verbergen */
+
+nav input {
+    display: none;
+}
+
+
+/*de label die bij het menu-icoontje hoort klikbaar maken */
+
+nav input.burger + label {
+    box-sizing: content-box;
+    display: block;
+    height: 1.1em;
+    padding: .5em;
+    cursor: pointer;
+}
+
+
+/*het menu-icoontje */
+
+nav input.burger + label:before {
+    content: "\2261";
+    font-size: 1.6em;
+    /*    font-size-adjust voor mozilla alleen */
+    font-size-adjust: .3;
+    line-height: 0;
+    position: relative;
+    top: .1em;
+    padding: 0 .2em;
+}
+
+
+/*het kruisje */
+
+nav input.burger:checked + label:before {
+    content: "\2715";
+    font-size: 1em;
+    /*    geen font-size-adjust */
+    font-size-adjust: 0;
+    top: .06em;
+    padding: 0 .38em;
+}
+
+
+/* toggles */
+
+.hidden {
+    display: none!important;
+}
+
+.show {
+    display: initial!important;
+}
+
+
+}
+
+
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
